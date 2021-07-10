@@ -1,0 +1,94 @@
+{
+    "Actor":{
+        "types": [
+            "playerCharacter", 
+            "npc", 
+            "monster", 
+            "boss"
+        ],
+        "templates": {
+            "commonStats": {
+                "abilities": {
+                    "str": {
+                        "value": 0
+                    },
+                    "dex": {
+                        "value": 0
+                    },
+                    "con": {
+                        "value": 0
+                    },
+                    "int": {
+                        "value": 0
+                    },
+                    "wis": {
+                        "value": 0
+                    },
+                    "cha": {
+                        "value": 0
+                    }
+                },
+                "attributes": {
+                    "hp": {
+                        "value": 10,
+                        "min": 0,
+                        "max": 10
+                    },
+                    "init": {
+                        "value": 0,
+                        "bonus": 0
+                    }
+                },
+                "effort": {
+                    "basic": {
+                        "value": 0
+                    },
+                    "weapon": {
+                        "value": 0
+                    },
+                    "gun": {
+                        "value": 0
+                    },
+                    "magic": {
+                        "value": 0
+                    },  
+                    "ultimate": {
+                        "value": 0
+                    }
+                }, 
+                "description": ""        
+            } 
+        },
+        "playerCharacter": {
+            "templates": [
+                "commonStats"
+            ],
+        },
+        "npc": {
+            "templates":[
+                "commonStats"
+            ]
+        }
+    },
+
+    "Item":{
+        "types":[
+            "weapon",
+            "spells"
+        ],
+        "templates": {
+            "itemDescription": {
+                "description": "" 
+            }
+        },
+        "weapon": {
+            "templates": [
+                "itemDescription"
+            ],
+            "attackWith": "melee",
+            "effort": "basic",
+            "lootBonus": 0
+        }
+    }
+
+}

@@ -1,0 +1,22 @@
+{
+    "kkrpg": {
+        "attack": {
+            "none": "",
+            "melee": "Melee",
+            "ranged": "Ranged",
+            "spell": "Spell"
+        },
+        "weapon": {
+            "attackWith": "Attack Type",
+            "damage": "Damage",
+            "lootBonus": "Loot Bonus"
+        },
+        "effort": {
+            "basic": "Basic",
+            "weapon": "Weapon",
+            "gun": "Gun",
+            "magic": "Magic",
+            "ultimate": "Ultimate"
+        }
+    }
+}

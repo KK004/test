@@ -1,0 +1,15 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <div class= "sidebar">
+        {{#if (eq actor.type "hero")}}
+        <h1 class="archetype">
+            <div data-edit="dtat.archetype" contenteditable=>
+                {{data.archetype}}
+            </div>
+        </h1>
+        {{/if}}
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}"/>
+        <div class="stats-and-weapons">
+            {{> "systems/kkrpg/templates/partials/character-stat-block.hbs"}}
+        </div>
+    </div> 
+</form>
